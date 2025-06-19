@@ -1,0 +1,14 @@
+[Unit]
+Description = Web Server
+
+[Service]
+Type = simple
+User = kmg5420
+ExecStart = home/kmg5420/webserver 8000
+TimeoutSec = 0
+StandardOutput = tty
+RemainAfterExit = yes
+WorkingDirectory = /home/kmg5420
+
+[Install]
+WantedBy = multi-user.target
